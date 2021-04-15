@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial,sans-serif;
+    font-size: 16px;
 }
 
 #menu1{
@@ -12,9 +13,9 @@
     position: fixed;
 }
 #menu2{
-    width: 100%;
     height: 100vh;
     margin-left: 150px;
+    display: flex;
     
 
 }
@@ -27,8 +28,49 @@
     flex-direction: column;
 }
 #menu2right{
-  
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px solid #d4d4d4;
     
+}
+.top-right{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    justify-content: center;
+}
+.right-button{
+    background-color: white;
+    color: #666;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 6px 26px;
+    border: #aaa 1px solid;
+    margin: 5px 10px;
+}
+.top-left{
+    flex-basis: 70%;
+}
+.h2-top{
+    font-size: 32px;
+}
+.span-blue{
+    color: #1b98f8;
+}
+.span-grey{
+    color: #999;
+}
+.bottom-content{
+    padding: 20px;
+
 }
 
 #button{
@@ -133,4 +175,61 @@
     font-size: 13px;
     color: black;
     margin: 7px 0;
+}
+.rwd-menu
+{
+    display: none;
+}
+
+@media (max-width:1055px){
+    .top-content{
+        flex-direction: column;
+        
+    }
+    .top-left{
+        flex-basis: 100%;
+    }
+    .top-right{
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+    #menu1{
+        width: 100%;
+        display: none;
+        height: auto;
+        position: inherit;
+        padding-bottom: 40px;
+    }
+    #menu2{
+        margin-left: 0;
+        flex-direction: column;
+        height: auto;
+    }
+    .rwd-menu{
+        display: flex;
+        height: 70px;
+        background-color: #1b98f8;
+        justify-content: center;
+        align-items: center;
+
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .rwd-button{
+        background-color: #057dd3;
+        color: white;
+        padding: 6px 10px;
+        border: 1px solid #0564a8;
+
+    }
+    .active{
+        display: block !important;
+    }
+    .top-content{
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
