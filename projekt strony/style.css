@@ -86,8 +86,7 @@
 {
     display: flex;
     justify-content: space-around;
-    background-color: red;
-    height: 40vh;
+    height: 45vh;
     width: 80%;
     
 }
@@ -95,6 +94,12 @@
 {
     margin: 0 2% 0 2%;
     width: 35%;
+    border-radius: 6%;
+}
+.car-name
+{
+    color: white;
+    
 }
 .hours-event
 {
@@ -108,13 +113,13 @@
 }
 .bmw-m3
 {
-    background-image: url("img/bmw_oferta.jpeg");
+    background-image: url("img/bmw1.png");
     background-size: cover;
     background-position: 25% 50%;
     background-color: black;
     
 }
-.bmw-m3::before
+/*.bmw-m3::before
 {
     position: absolute;
     max-width: 35%;
@@ -122,39 +127,43 @@
     content:"";
     background-color: black;
     opacity: 0.9;
-}
+}*/
 .ford-mustang1
 {
-    background-image: url("img/Mustang_oferta.jpg");
+    background-image: url("img/Mustang1.png");
     background-size: cover;
     background-position: 25% 50%;
     
 }
 .a45amg
 {
-    background-image: url("img/Mercedes_oferta.jpg");
+    background-image: url("img/Mercedes1.png");
     background-size: cover;
     background-position: 45% 50%;
 }
 .ford-mustang2
 {
-    background-image: url("img/mustang2_oferta.jpeg");
+    background-image: url("img/mustang2.png");
     background-size: cover;
     background-position: 25% 50%;
     
+}
+.bmw-m8
+{
+    background-image: url("img/bmw2.png");
 }
 .bottom-content
 {
     height: 30vh;
     width: 100;
-    background-image: url("img/nfs.jpg");
+    background-image: url("img/nfs.png");
     background-size: cover;
-    background-position: 10%;
+    background-position: 20% 60%;
     color: white;
     justify-content: center;
     z-index: 0;
 }
-.bottom-content::after
+/*.bottom-content::after
 {
     content: " ";
     height: 100%;
@@ -162,7 +171,7 @@
     background-color: rgba(0,0,0,0.5);
     z-index: 1;
     position: absolute;
-}
+}*/
 .upcoming-event
 {
     height: 100%;
@@ -195,7 +204,7 @@
 }
 .car-spot
 {
-    height: 20%;
+    height: 30%;
     width: 100%;
     display: flex;
 }
@@ -203,4 +212,15 @@
 {
     background-color: blueviolet;
     width: 100%;
+    background-image: url("img/spot.png");
+    max-width: 50%;
+    position: static;
+}
+.spot-info
+{
+    width: 100%;
+    background-color: #532dac;
+    color: white;
+    max-width: 50%;
+    position: static;
 }
